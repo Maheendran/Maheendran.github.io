@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import"./About.css"
+import { BsFillSunFill ,BsFillMoonStarsFill} from 'react-icons/bs';
 export const About = () => {
   const[state,setSate]=useState(false)
 
@@ -12,14 +13,16 @@ export const About = () => {
       setSate(!state)
     }
   }
-  return (
+  //////////
+const[night,setNight]=useState(false)
+
+return (
     <div>
      
      
-        <div className= "about-container"  id='about'>
-      
+        <div className= {night ?  "night-container":"about-container"} id='about'>   
 <div  className='about-left'>
-<h1 >ABOUT ME</h1>
+<h1 className={night ?"nightheading":"heading" }>ABOUT ME</h1>
 <div className='about-left-inside'>
 
 
@@ -41,7 +44,23 @@ applications and 4 major projects. Learned a great deal about teamwork, leadersh
 
 
 <div className='about-right'>
-<img  className='sky'src="https://pantri.com/static/images/glyphicons/google/svg/bg-cloud.svg" alt="" />
+  <div className='togglebutton' onClick={()=>setNight(!night)}>
+  {night ? <BsFillMoonStarsFill size={"3rem"}/>:<BsFillSunFill size={"4rem"} style={{color:"orange"}} />}
+ 
+
+ <div className='clickme'>
+  {night ?<p style={{fontFamily:"monospace"}}>Day Mode</p>:
+  <p style={{fontFamily:"monospace"}}>Night Mode</p>}
+
+ </div>
+ </div>
+{night ? 
+<div>
+<img  className='sky'src="./assets/nightsky.png" alt="" />
+<img  className='skystar' src="./assets/stars.png" alt="" />
+</div>
+:
+<img  className='sky' src="./assets/cloud.svg" alt="" />}
 
        <img className='tree' src="./assets/R (3).png" alt="" />
        <img className='man' src="./assets/man.png" alt="" />
@@ -50,20 +69,79 @@ applications and 4 major projects. Learned a great deal about teamwork, leadersh
        <img className='grass1' src="./assets/R (4).png" alt="" />
       
        <img className='rock' src="./assets/bigrock.png" alt="" />
-      
-       <div  className='leaves'>
+    
+     {night ? "" : <div  className='leaves'>
 <img src="./assets/leaf01.png" alt="" />
 <img src="./assets/leaf02.png" alt="" />
 <img src="./assets/leaf03.png" alt="" />
 
-      </div> 
+      </div> }
       
-      <div className='leaves2'>
+      <div className={night ? "hiddenleaves" :'leaves2'}>
  <img src="./assets/leaf01.png" alt="" />
  <img src="./assets/leaf02.png" alt="" />
  <img src="./assets/leaf03.png" alt="" />
  
       </div>
+
+{night && <div>
+  <div className="firefly">
+  <img src="./assets/fly.png" alt="" />
+<img src="./assets/light.png" alt="" />
+</div>
+<div className="firefly1">
+<img src="./assets/fly.png" alt="" />
+<img src="./assets/light.png" alt="" />
+</div>
+<div className="firefly2">
+<img src="./assets/fly.png" alt="" />
+<img src="./assets/light.png" alt="" />
+</div>
+<div className="firefly3">
+<img src="./assets/fly.png" alt="" />
+</div>
+
+{/* ////////// */}
+<div >
+  <img  className="fireflysit bee1"src="./assets/light.png"alt="" />
+<img  className="fireflysit  bee1"  src="./assets/fly.png" alt="" />
+</div>
+<div >
+  <img  className="fireflysit bee1"src="./assets/light.png"alt="" />
+<img  className="fireflysit  bee1"  src="./assets/fly.png" alt="" />
+</div>
+<div >
+<img  className="fireflysit bee2"src="./assets/light.png"alt="" />
+<img  className="fireflysit  bee2"  src="./assets/fly.png" alt="" />
+</div>
+<div >
+<img  className="fireflysit bee3"src="./assets/light.png"alt="" />
+<img  className="fireflysit  bee3"  src="./assets/fly.png" alt="" />
+</div>
+<div >
+<img  className="fireflysit bee4"src="./assets/light.png"alt="" />
+<img  className="fireflysit  bee4"  src="./assets/fly.png" alt="" />
+</div>
+<div >
+<img  className="fireflysit bee5"src="./assets/light.png"alt="" />
+<img  className="fireflysit  bee5"  src="./assets/fly.png" alt="" />
+</div>
+<div className='shadow'>
+  
+  <img src="https://clipground.com/images/shadow-png-4.png" alt="" />
+</div>
+<div className='bottomshadow'>
+  <img src="https://clipground.com/images/shadow-png-4.png" alt="" />
+</div>
+  
+<div className='screenlight'>
+   
+  </div>
+
+  </div>}
+
+
+
    
   <div className='maneye'>
   <img  src="https://cdn.pixabay.com/photo/2014/04/03/10/01/eye-309608_960_720.png" alt="" />

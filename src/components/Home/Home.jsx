@@ -8,12 +8,14 @@ import { Work } from '../Work/Work';
 import { Skill } from '../Skill/Skill';
 import { Contact } from '../Contact/Contact';
 import  {Navbar}  from '../Navbar/Navbar';
+import { Contactbutton } from './Contactbutton';
 export const Home = () => {
  
   return (
     <div className='main'>
 
 <Navbar/>
+<Contactbutton/>
 <ScrollToTop smooth='true' style={{height:"40px",width:"40px",backgroundColor:"orange",borderRadius:"50%",
 boxShadow:" rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
 

@@ -3,22 +3,23 @@ import'./Contact.css'
 import emailjs from '@emailjs/browser';
 export const Contact = () => {
     const form=useRef()
-  const sendEmail = (e) => {
-    e.preventDefault();
 
-    emailjs.sendForm('service_0ejhzye', 'template_gjsx60y', form.current, '0fLhxFwW7KsCqNXNQ')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset()
-  };
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_rfqkrmd', 'template_9jvuvot', form.current, '0fLhxFwW7KsCqNXNQ')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        } )
+        e.target.reset();
+      }
   return (
     <div>
         <div className='contact-container' id='contact'>
 <div className='contact-heading'>
-  <h1>Take A Coffee And Chat With Me</h1>
+  <h1 className='heading'>Take A Coffee And Chat With Me</h1>
 </div>
 
 <div className='contact-main-section' >
@@ -28,10 +29,10 @@ export const Contact = () => {
 <div className='contact-right'>
 
 <div className='form-input'>
-  <form  ref={form} onSubmit={sendEmail}>
-    <input type="text" placeholder='name' />
-    <input type="email" placeholder='email' />
-    <input type="text" placeholder='subject' />
+  <form ref={form} onSubmit={sendEmail}>
+    <input type="text" placeholder='name' name='user_name' />
+    <input type="email" placeholder='email'name='user_email'   required/>
+    <input type="text" placeholder='subject' name='subject'  required />
 
     <div id='messege-input'>
       

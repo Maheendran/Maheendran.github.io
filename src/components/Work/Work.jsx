@@ -1,113 +1,39 @@
-import React from 'react'
-import"./Work.css"
-import Zoom from 'react-reveal/Zoom';
+import React, { useState } from 'react'
 import'./Work.css'
 import { BsFillCameraVideoFill ,BsFillEyeFill,BsGithub} from 'react-icons/bs';
-
-
+import { project } from '../Project';
+import Fade from 'react-reveal/Fade';
 export const Work = () => {
-    const project=[{
-        img:"./assets/project/adidas.png",
-        name:"adidas",
-        discription:"This website is a clone of 'Adidas.com' & here i implemented some functionalities product sorting & filtering,add to cart etc.  ",
-        tech:"HTML,CSS,JAVASCRIPT,REACT",
-        linked:"",
-        fachebook:"https://roaring-hamster-ab9fa6.netlify.app/",
-        github:"https://github.com/Maheendran/adidasclone"
-        
-          },{
-            img:"./assets/project/foodbook.png",
-            name:"foodbook",
-            discription:"This project is about building as online E-commerce food web application showing the functionalities of an e-commerce food,add to cart etc.",
-            tech:"HTML,CSS,JAVASCRIPT,REACT",
-            linked:"",
-            fachebook:"",
-            github:"https://github.com/Maheendran/foodbook"
-            
-              },{
-                img:"./assets/project/recipe.png",
-                name:"RecipeBook",
-                discription:"This project is about building as online  food recipe application showing the functionalities of search,trending etc.",
-                tech:"HTML,CSS,JAVASCRIPT,REACT",
-                linked:"",
-                fachebook:"",
-                github:""
-                
-                  },{
-                    img:"./assets/project/netflix.png",
-                    name:"Netflix",
-                    discription:"This website is a clone of 'NETFLIX' & here i implemented some functionalities, backend integreated with firebase.",
-                    tech:"HTML,CSS,JAVASCRIPT,REACT",
-                    linked:"",
-                    fachebook:"",
-                    github:"https://github.com/Maheendran/Netflix"
-                    
-                      },{
-                        img:"./assets/project/music.png",
-                        name:"Music Player",
-                        discription:"This project is about building as music player application showing the functionalities of start,pause,previous,next etc.",
-                        tech:"HTML,CSS,JAVASCRIPT,REACT",
-                        linked:"",
-                        fachebook:"",
-                        github:"https://github.com/Maheendran/musicplayer"
-                        
-                          },{
-                            img:"./assets/project/port.png",
-                            name:"Portfolio",
-                            discription:"This is my new porfolio which recently made using React,JavaScript and CSS.",
-                            tech:"HTML,CSS,JAVASCRIPT,REACT",
-                            linked:"",
-                            fachebook:"https://elaborate-heliotrope-f21554.netlify.app/",
-                            github:"https://github.com/Maheendran/portfolio"
-                            
-                              },{
-                                img:"./assets/project/net.png",
-                                name:"Netflix Logo",
-                                discription:"This project is about building as 'NETFLIX' logo animation with only CSS.",
-                                tech:"HTML,CSS",
-                                linked:"",
-                                fachebook:"https://bejewelled-sherbet-6ecd6b.netlify.app/",
-                                github:""
-                                
-                                  },{
-                                    img:"./assets/project/calc.png",
-                                    name:"Calculator",
-                                    discription:"This project is about building as calculator  with all functionalities .",
-                                    tech:"HTML,CSS,JAVASCRIPT,REACT",
-                                    linked:"",
-                                    fachebook:"",
-                                    github:"https://github.com/Maheendran/Calculator"
-                                    
-                                      },{
-                                        img:"./assets/project/cartoon.png",
-                                        name:"cartoon css",
-                                        discription:"This project is about building as cartoon character  animation with only CSS.",
-                                        tech:"HTML,CSS",
-                                        linked:"",
-                                        fachebook:"",
-                                        github:""
-                                        
-                                          }
-        
-        ]
-        
-  return (
+  const[projectdetail,setProjectdetail]=useState(project)
+    
+    const handleclick=(e)=>{
+     const Update=project.filter((item)=>{
+    return  item.type===e;
+    })
+     setProjectdetail(Update)
+     console.log(projectdetail)
+    }    
+        return (
     <div>
-        {/* <Zoom> */}
+     <Fade>
 <div className='work-container' id='work'>
 
 <div>
 
-<span> <h1>My Creative Portfolio Section</h1>
-</span>
+<span> <h1 className='heading'>My Creative Portfolio Section</h1>
+</span>  
 </div>
   
-
+<div className='filter_btn'>
+<button onClick={()=>handleclick("react")}>React</button>
+<button onClick={()=>handleclick("javascript")}>JavaScript</button>
+<button onClick={()=>handleclick("css")}>CSS</button>
+</div>
 <div className='work-grid'>
 
-{project.map((e)=>(
+{projectdetail.map((e)=>(
   
-  <div className='work-grid-div'>
+  <div className='work-grid-div' key={e.name}>
 <h3>{e.name}</h3>
    <img src={e.img} alt="" />
    
@@ -130,7 +56,8 @@ export const Work = () => {
 </div>
 
 </div>
-{/* </Zoom> */}
+</Fade>
+
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import"./Head.css"
 import Fade from 'react-reveal/Fade';
+
 export const Head = () => {
 
   return (
@@ -24,7 +25,10 @@ export const Head = () => {
 </span>
 <br />
 
-<span><button >RESUME</button></span>
+<span>
+  <a href='./assets/cv.pdf' download={"./assets/resume (2).pdf"}>
+  <button  >RESUME</button></a>
+  </span>
 </div>
 
 <div  className='right-home-container'>

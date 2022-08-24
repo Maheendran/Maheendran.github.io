@@ -2,7 +2,32 @@
   font-family: 'Poppins', sans-serif;
 
 
-
+    }
+      .left_fixed{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 3rem;
+        height: 10rem;
+        
+        position: absolute;
+        left: 0;
+        z-index: 1000000;
+        bottom: 0;
+        position: fixed;
+        text-align: center;
+        align-items: center;margin: auto;
+        font-size: 2rem;
+      
+       
+      }
+      .left_fixed a{
+        color: orange;
+      }
+      @media screen and (max-width: 480px) {
+        .left_fixed{
+          display: none;
+        }
       }
       body::-webkit-scrollbar{
         display: none;

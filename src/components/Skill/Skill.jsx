@@ -6,7 +6,7 @@ export const Skill = () => {
         <div className='skills-container' id='skills'>
 
 <div className='skills-heading'>
-<h1>My Technical Skills</h1>
+<h1 className='heading'>My Technical Skills</h1>
 </div>
 <div className='skills-grid'>
 

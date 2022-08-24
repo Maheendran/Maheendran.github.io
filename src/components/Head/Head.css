@@ -200,7 +200,7 @@ overflow: hidden;
             @media only screen and (min-width: 480px) and (max-width: 1024px){
               .home-container{
                 border: 0px solid;
-                width: 100%;
+                width: 91.5%;
                 height: 400px;
                 box-sizing: content-box;
                 padding: 20px 40px 120px 40px ;
@@ -245,7 +245,7 @@ overflow: hidden;
                
               }
               
-      
+        
 
             .right-home-container :nth-child(1){
               margin-top: -1rem;

@@ -8,12 +8,13 @@
 /* ........... */
 nav{
   background-color:rgb(252, 184, 57);
+
   height: 60px;
   width: 100%;
 position: fixed;
 left: 0;
 top: 0;
-z-index: 10000;
+z-index: 1000;
 
 }
 label.logo{
@@ -33,8 +34,7 @@ nav>ul{
   display: inline-block;
   line-height: 60px;
 margin: 0 20px;
-
-
+font-weight: 600;
 }
 nav ul li:hover{
  color: white;
@@ -54,8 +54,8 @@ nav ul li:hover{
 #check{
   display: none;
 }
-@media (max-width:680px){
-  
+@media (max-width:480px){
+ 
 
 nav ul li{
   font-size:26px ;
@@ -90,48 +90,17 @@ nav >ul>li:checked~ul{
   left: -100%;
  }
 
-}
 
-.navbar-main{
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 10000;
-  width: 100%;
-  height: 60px;
-  border: 0px solid;
-  display: flex;
-  justify-content:space-between;
-  text-align: center;
-align-items: center;
-background-color: orange;
-}
-ul{
-  list-style: none;
-}
 
-.left-navbar img{
-  width: 100px;
 
-}
-.right-navbar{
-  text-align: center;
-  align-items: center;
-}
-.right-navbar ul{
-margin-right: 20px;
 
-  display: flex;
 
-}
-.right-navbar ul li{
-  font-weight: 700;
-  margin-right: 20px;
-}
-.right-navbar ul li:hover{
-color: white;
-  /* background-color: red; */
 }
 /* ........................................ */
+@media only screen and (min-width: 480px) and (max-width: 1024px){
 
+nav{
+  width: 100%;
+}
+}
 

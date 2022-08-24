@@ -60,7 +60,9 @@
     }
     /* /..................... */
        @media screen and (max-width: 480px) {
-       
+        .heading{
+          font-weight: 800;
+        }
       .contact-main-section{
         margin: auto;
         border: 0px solid;
