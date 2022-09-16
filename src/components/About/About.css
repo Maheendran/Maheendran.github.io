@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital@0;1&family=Qwitcher+Grypen&family=Rancho&family=Righteous&family=Roboto+Mono:wght@500&family=Russo+One&family=Satisfy&display=swap');
+
+
 #about{
 overflow: hidden;
 
 }
 .about-container{
+ 
   border: 0px solid;
  color: rgb(17, 17, 17);
 width: 100%;
@@ -38,6 +42,7 @@ width: 60%;
 position: absolute;
 display: flex;
 flex-direction: column;
+
 }
 
 .about-left h1{

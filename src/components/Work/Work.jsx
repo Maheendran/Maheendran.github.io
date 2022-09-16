@@ -2,32 +2,36 @@ import React, { useState } from 'react'
 import'./Work.css'
 import { BsFillCameraVideoFill ,BsFillEyeFill,BsGithub} from 'react-icons/bs';
 import { project } from '../Project';
-import Fade from 'react-reveal/Fade';
+
+
+
 export const Work = () => {
   const[projectdetail,setProjectdetail]=useState(project)
-    
+ 
     const handleclick=(e)=>{
+      if(e=="all"){
+        return setProjectdetail(project)
+    
+      }
      const Update=project.filter((item)=>{
     return  item.type===e;
     })
      setProjectdetail(Update)
-     console.log(projectdetail)
     }    
         return (
     <div>
-     <Fade>
 <div className='work-container' id='work'>
-
 <div>
-
 <span> <h1 className='heading'>My Creative Portfolio Section</h1>
 </span>  
 </div>
   
 <div className='filter_btn'>
-<button onClick={()=>handleclick("react")}>React</button>
-<button onClick={()=>handleclick("javascript")}>JavaScript</button>
-<button onClick={()=>handleclick("css")}>CSS</button>
+<button className='btn' onClick={()=>handleclick("all")}>All</button>
+<button className='btn' onClick={()=>handleclick("react")}>React</button>
+<button className='btn' onClick={()=>handleclick("javascript")}>JavaScript</button>
+<button className='btn'onClick={()=>handleclick("html")}>Html</button>
+<button className='btn' onClick={()=>handleclick("css")}>CSS & Animation</button>
 </div>
 <div className='work-grid'>
 
@@ -56,7 +60,7 @@ export const Work = () => {
 </div>
 
 </div>
-</Fade>
+
 
     </div>
   )

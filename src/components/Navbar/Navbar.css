@@ -54,6 +54,31 @@ nav ul li:hover{
 #check{
   display: none;
 }
+.animation_nav img{
+ 
+position: absolute;
+left: 0;
+top: -0.5rem;
+width: 100px;
+height: 80px;
+animation: walk 50s forwards infinite;
+}
+@keyframes walk{
+  0%{
+    transform: translateX(0rem);
+  }
+  100%{
+    transform: translateX(87rem);
+  }
+}
+
+
+
+
+
+
+
+
 @media (max-width:480px){
  
 

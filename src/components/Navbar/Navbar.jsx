@@ -16,7 +16,10 @@ export const Navbar = () => {
   <span style={{fontSize:"15px",fontWeight:"600"}}>Ma</span>
   <span  style={{fontSize:"20px",fontWeight:"600"}}>hi</span>
  </label>
-       
+       <div className='animation_nav'>
+       <img  src="./assets/walking.gif"alt="" />
+
+       </div>
         <ul>
 <Link spy={true}id='home-container'  to='home' smooth={true} activeClass="activeClass"> 
 <li>HOME</li> 

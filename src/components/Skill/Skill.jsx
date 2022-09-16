@@ -9,13 +9,30 @@ export const Skill = () => {
 <h1 className='heading'>My Technical Skills</h1>
 </div>
 <div className='skills-grid'>
-
+<div className='skills-single-boot'>
+<img 
+src="./assets/html.png" alt="" />
+<p>HTML</p>
+</div>
+<div className='skills-single-boot'>
+<img 
+src="./assets/css.jpg" alt="" />
+<p>CSS</p>
+</div>
+<div className='skills-single-react'>
+<img  
+src="./assets/jss.png" alt="" />
+<p>JavaScript</p>
+</div>
 <div className='skills-single-react'>
 <img 
 src="./assets/react.png" alt="" />
 <p>React</p>
 </div>
-
+<div className='skills-single-boot'>
+<img src="./assets/logo.png" alt="" />
+<p>Redux</p>
+</div>
 <div  className='skills-single-boot'>
 <img 
 src="./assets/boot.png" alt="" />
@@ -31,35 +48,19 @@ src="./assets/boot.png" alt="" />
 <img src="./assets/gitclone.png" alt="" />
 <p>Git</p>
 </div>
-<div className='skills-single-boot'>
+{/* <div className='skills-single-boot'>
 <img 
 src="./assets/tail.png" alt="" />
 <p>TailWind</p>
-</div>
-<div className='skills-single-boot'>
-<img 
-src="./assets/css.jpg" alt="" />
-<p>CSS</p>
-</div>
-<div className='skills-single-react'>
-<img  
-src="./assets/jss.png" alt="" />
-<p>JavaScript</p>
-</div>
-<div className='skills-single-boot'>
-<img 
-src="./assets/html.png" alt="" />
-<p>HTML</p>
-</div>
+</div> */}
+
+
 <div className='skills-single-react'>
 <img 
 src="./assets/npm-logo.png" alt="" />
 <p>NPM</p>
 </div>
-<div className='skills-single-boot'>
-<img src="./assets/logo.png" alt="" />
-<p>Redux</p>
-</div>
+
 </div>
 </div>
     </div>
