@@ -21,7 +21,7 @@ export const Head = () => {
               <ul className="dynamic-txt">
                 <li>
                   {" "}
-                  <span>UI Developer</span>
+                  <span>FrontEnd Developer</span>
                 </li>
               </ul>
             </div>

@@ -3,9 +3,9 @@
   name:"  Flipkart",
   discription:"This website is a clone of 'Flipkart' & here i implemented some functionalities product sorting & filtering,add to cart etc.  ",
   tech:"HTML,CSS,JAVASCRIPT,REACT,FIREBASE",
-  linked:"",
+  linked:"https://www.linkedin.com/feed/update/urn:li:activity:6984112702956740608?utm_source=share&utm_medium=member_desktop",
   fachebook:"",
-  github:""
+  github:"https://github.com/Maheendran/flipkart_clone"
   ,type:"react"
   
     },{
@@ -53,7 +53,7 @@
         discription:"This project is about building as online E-commerce food web application showing the functionalities of an e-commerce food,add to cart etc.",
         tech:"HTML,CSS,JAVASCRIPT,REACT,FIREBASE",
         linked:"",
-        fachebook:"https://papaya-eclair-280e34.netlify.app/",
+        fachebook:"https://loquacious-dodol-12fc8c.netlify.app/",
         github:"https://github.com/Maheendran/foodbook"
         ,type:"react"
           },{
@@ -109,7 +109,7 @@
                                     discription:"This project is about simple animation with  CSS.",
                                     tech:"HTML,CSS",
                                     linked:"",
-                                    fachebook:"https://teal-cuchufli-05033d.netlify.app/",
+                                    fachebook:"https://sensational-cuchufli-54fcce.netlify.app/",
                                     github:"https://github.com/Maheendran/netflix_animation"
                                     ,type:"css"
                                       }

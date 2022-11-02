@@ -2,9 +2,6 @@ import React, { useState } from 'react'
 import'./Work.css'
 import { BsFillCameraVideoFill ,BsFillEyeFill,BsGithub} from 'react-icons/bs';
 import { project } from '../Project';
-
-
-
 export const Work = () => {
   const[projectdetail,setProjectdetail]=useState(project)
  
