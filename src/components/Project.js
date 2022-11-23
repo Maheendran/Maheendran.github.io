@@ -83,7 +83,17 @@
                         fachebook:"https://elaborate-heliotrope-f21554.netlify.app/",
                         github:"https://github.com/Maheendran/portfolio"
                         ,type:"react"
-                          },{
+                          },
+                          {
+                            img:"./assets/project/kantara.png",
+                            name:"Kantara ",
+                            discription:"This project is about building as 'Kantara movie still' logo with CSS.",
+                            tech:"HTML,CSS",
+                            linked:"https://www.linkedin.com/feed/update/urn:li:activity:6995727463196622848/",
+                            fachebook:"https://transcendent-dusk-077cc9.netlify.app/",
+                            github:"https://github.com/Maheendran/kantara"
+                            ,type:"css"
+                        },{
                             img:"./assets/project/net.png",
                             name:"Netflix Logo",
                             discription:"This project is about building as 'NETFLIX' logo animation with only CSS.",
