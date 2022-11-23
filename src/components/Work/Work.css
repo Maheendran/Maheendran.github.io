@@ -1,0 +1,253 @@
+.dummycontainer{
+    width: 100%;
+    height: 100vh;
+    border: 0px solid;
+  }
+  a button{
+    text-decoration: none;
+    border: none;
+    list-style: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 0px;
+ 
+  }
+.work-container{
+  margin: auto;
+  box-sizing: border-box;
+      width: 100%;
+      height: 95vh;
+      max-height:95vh ;
+      overflow-x: hidden;
+      user-select: none;
+padding: 0.5rem;
+display: flex;
+flex-direction: column;
+text-align: center;
+
+      }
+      .work-container::-webkit-scrollbar{
+        width: 10px;
+      }
+      .work-container::-webkit-scrollbar-thumb{
+        width: 10px;
+        background-color: orange;
+        border-radius: 20px;
+      }
+      .work-container h1{
+        text-align: center;
+        align-items: center;
+     margin-bottom: 1rem;
+        height: 80px;
+        padding-top: 80px;
+        margin: auto;
+        
+      }
+      .work-grid{
+        margin: auto;
+        width: 80%;
+       padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+       
+      }
+    
+      .filter_btn{
+        padding-top: 80px;
+        padding-bottom: 10px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+      }
+    
+      .filter_btn button{
+        color: white;
+        border: none;
+        font-weight: 500;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        padding: 0rem 0.6rem;
+        margin-left: 1rem;
+        padding: 0.2rem 2rem;
+        margin-right: 1rem;
+        background-color: rgba(255, 166, 0, 0.571);
+      }
+     
+      .filter_btn button:hover{
+        background-color: grey;
+        transition: 0.9s ease-in-out;
+      }
+      .work-grid>div{
+        margin-top: 1.5rem;
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: flex;
+        flex-direction: column;
+       padding: 1.5rem ;
+        box-sizing: border-box;
+        text-align: center;
+        align-items: center;
+        text-align: left;
+        background-color: rgba(255, 166, 0, 0.116);
+        backdrop-filter: blur(20px);
+      }
+      .work-grid-div h4{
+        color: red;
+      }
+      .work-grid>div:hover{
+       z-index: 1;
+        /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      transition: 0.5s ease-in-out;
+      }
+       .work-grid img{
+        padding: 5px;
+        margin: auto;
+       width:  90%;
+       box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+       height: 180px;
+       border-radius: 10px;
+      }
+     
+      .work-div-button{
+        margin-top: 10px;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        height: 50px;
+        border: 0px solid;
+        display: flex;
+        justify-content: space-evenly;
+       
+      }
+      
+      a>button:hover{
+        background-color: grey;
+        color: white;
+  z-index: 10000;
+
+      }
+
+     
+      
+     
+      /* ///................. */
+      @media screen and (max-width: 480px) {
+     
+        .grid-innersection{
+          width: 100%;
+          max-width: 80%;
+          padding: 5px;
+          font-size: 15px;
+        }
+        .work-grid-div img{
+         padding: 20px;
+         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        }
+      
+        .work-container h1{
+         
+          font-size: 20px;
+        }
+        .work-grid{
+          margin: auto;
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+         grid-template-rows: auto;
+         word-wrap: break-word;
+        }
+        .work-grid>div{
+          font-size: 12px;
+          box-sizing: border-box;
+          word-wrap: break-word;
+          padding: 1rem ;
+          border: 0px solid;
+          height: 100%;
+          border-radius: 20px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          align-items: center;
+        }
+        .filter_btn{
+          padding-top: 10px;
+          width: 80%;
+        margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+      
+        .filter_btn button{
+          color: white;
+          border: none;
+          font-weight: 500;
+          margin-bottom: 10px;
+          font-size: 0.5rem;
+          border-radius: 10px;
+          background-color: rgba(255, 166, 0, 0.571);
+        }
+       
+
+
+
+
+.grid-innersection :nth-child(1){
+line-height: 20px;
+}
+.work-container h1{
+  text-align: center;
+  align-items: center;
+
+  height: 80px;
+  padding-top: 40px;
+  border: 0px solid;
+}
+
+
+.work-grid{
+       
+  margin-top: 1%;}
+
+      }
+      .heading{
+        font-weight: 800;
+        
+      }
+      /* /////////////////////// */
+      @media only screen and (min-width: 560px) and (max-width: 1024px){
+        .work-container{
+          border: 0px solid;
+        }
+        .work-grid{
+          margin-top: 20%;
+          width: 75%;
+           margin: auto;
+           margin: auto;
+         
+           display: grid;
+         
+           grid-template-columns: repeat(2,320px);
+          grid-template-rows: auto;
+           
+           column-gap: 12%;
+         }
+         .work-grid>div{
+          
+           /* border: 4px solid; */
+           height: 100%;
+           border-radius: 20px;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+           display: flex;
+           flex-direction: column;
+           /* padding: 10px; */
+           box-sizing: border-box;
+           text-align: center;
+           align-items: center;
+         }
+    }

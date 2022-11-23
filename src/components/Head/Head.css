@@ -1,0 +1,265 @@
+
+
+    .home-container{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+
+    overflow: hidden;
+    /* padding: 30px 50px 160px 80px ; */
+
+    border: 0px solid red;
+    }
+    .left-home-container{
+    text-align: left;
+    border: 0px solid;
+    width: 60%;
+    padding-left: 110px;
+    }
+    .left-home-container button{
+    width: 14%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(255, 166, 0);
+    color: white;
+    font-weight: 600;
+    border: 0px;
+
+    }
+    .left-home-container h2{
+    font-size: 2rem;
+
+
+    }
+    .left-home-container h1{
+    font-size: 4rem;
+
+    }
+    .right-home-container{
+    margin: auto;
+    align-items: center;
+    width: 300px;
+    height: 270px;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    }
+
+    .right-home-container :nth-child(1){
+    margin-top: -1rem;
+    width: 33rem;
+    position: absolute;
+    right: 2rem;
+    margin: auto;
+    }
+
+
+    .right-home-container :nth-child(2){
+    margin-top: 1rem;
+    width: 17rem;
+    position: absolute;
+    right: 11rem;
+    border-radius: 0px 0px 50% 50%;
+
+    }
+
+
+    /* ................head txt animation ............... */
+    .wrapper{
+    margin-top: 1.4%;
+
+    display: inline-flex;
+    }
+    .wrapper .static-txt{
+    font-size: 35px;
+    font: 400;
+    }
+    .dynamic-txt li{
+    color: orange;
+    padding-left: 5px;
+    margin-top: -10px;
+    list-style: none ;
+    font-size: 50px;
+    font-weight: 500;
+
+    }
+    .dynamic-txt li span{
+    position: relative;
+    }
+    .dynamic-txt li span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-left: 0px solid black;
+    animation: typing 3.5s  linear infinite;
+
+    }
+    @keyframes typing{
+
+    100%{
+
+    left: 100%;
+    margin: 0 -35px 0 35px ;
+    }
+
+    }
+
+    /* ...................... */
+    @media screen and (max-width: 480px) {
+    .home-container{
+    margin: auto;
+    border: 0px solid;
+    width: 100%;
+    height: 68vh;
+    display: block;
+
+    align-items: center;
+    text-align: center;
+    }
+    .left-home-container{
+    border: 0px solid;
+    padding-top: 30px;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+
+    box-sizing: border-box;
+    padding-left: 40px;
+    }
+    .left-home-container h2{
+    font-size: 25px;
+    }
+    .left-home-container h1{
+    font-size: 35px;
+    }
+    .dynamic-txt li{
+    font-size: 25px;
+    margin-bottom: 15px;
+    }
+    .wrapper .static-txt{
+    font-size: 20px;
+
+    }
+    .dynamic-txt{
+    margin-top: 6px;
+    }
+    .left-home-container button{
+    width: 35%;
+    height: 30px;
+    padding-bottom: 20px;
+    }
+    .right-home-container{
+    border: 0px solid;
+    position: absolute;
+    margin: auto;
+    top: 18rem;
+    overflow: hidden;
+    width: 100%;
+    }
+
+    .right-home-container :nth-child(1){
+
+    margin: auto;
+    width: 21rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    }
+
+
+    .right-home-container :nth-child(2){
+    margin: auto;
+    width: 14rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 0px 0px 50% 50%;
+
+    }
+
+
+
+
+    }
+
+
+    /* //////////////////////////////////////// */
+
+
+    @media only screen and (min-width: 480px) and (max-width: 1024px){
+    .home-container{
+    border: 0px solid;
+    width: 91.5%;
+    height: 400px;
+    box-sizing: content-box;
+    padding: 20px 40px 120px 40px ;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    }
+    .left-home-container{
+    width: 500px;
+    }
+    .left-home-container h2{
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    }
+    .left-home-container h1{
+    font-size: 3rem;
+
+    }
+    .wrapper .static-txt{
+    font-size: 30px;
+    font: 400;
+    }
+    .dynamic-txt li{
+    padding-bottom: 10px;
+    color: orange;
+    padding-left: 5px;
+    margin-top: -10px;
+    list-style: none ;
+    font-size: 40px;
+    font-weight: 500;
+
+    }
+    .left-home-container button{
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    font-weight: 600;
+
+    }
+
+
+
+    .right-home-container :nth-child(1){
+    margin-top: -1rem;
+    width: 33rem;
+    position: absolute;
+    right: 2rem;
+
+    }
+
+
+    .right-home-container :nth-child(2){
+    margin-top: 1rem;
+    width: 17rem;
+    position: absolute;
+    right: 11rem;
+    border-radius: 0px 0px 50% 50%;
+
+    }
+    }
